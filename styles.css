@@ -204,6 +204,14 @@ header a:hover {
     text-align: center;
 }
 
+.scenario-video {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 15px auto;
+    border-radius: 8px;
+}
+
 .scanerio-box h2 {
     font-size: 1.5rem;
     margin-bottom: 10px;

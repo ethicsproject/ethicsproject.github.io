@@ -57,25 +57,25 @@ header a:hover {
 }
 
 .home_title-background {
-    background: url('img/scotus.jpg') center/cover no-repeat;
+    background: url('./img/scotus.jpg') center/cover no-repeat;
     background-position: center top 22%;
     filter: blur(10px);
 }
 
 .utilitarianism_title-background {
-    background: url('img/grpPplTalking.jpg') center/cover no-repeat;
+    background: url('./img/grpPplTalking.jpg') center/cover no-repeat;
     background-position: center top 58%;
     filter: blur(6px);
 }
 
 .paternalism_title-background {
-    background: url('img/justice.jpg') center/cover no-repeat;
+    background: url('./img/justice.jpg') center/cover no-repeat;
     background-position: center top 10%;
     filter: blur(6px);
 }
 
 .moralrights_title-background {
-    background: url('img/billOfRights.jpg') center/cover no-repeat;
+    background: url('./img/billOfRights.jpg') center/cover no-repeat;
     background-position: center top -30%;
     filter: blur(6px);
 }

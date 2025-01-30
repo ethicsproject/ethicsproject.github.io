@@ -9,6 +9,7 @@ body, html {
     overflow-x: hidden;
 }
 
+/* Nav Bar Styling */
 header {
     position: fixed;
     top: 0;
@@ -32,85 +33,83 @@ header a:hover {
     color: lightblue;
 }
 
-.home_title-section {
-    height: 100vh;
+/* Title Section Setup */
+.title-section {
     position: relative;
     overflow: hidden;
+}
+.home_title-section {
+    height: 100vh;
+}
+
+.subpage_title-section {
+    height: 75vh;
+}
+
+/* Title Background Setup */
+.title-background {
+    position: absolute;
+    top: 0;
+    left: -1%;
+    width: 102%;
+    height: 100%;
+    z-index: -2;
 }
 
 .home_title-background {
     background: url('img/scotus.jpg') center/cover no-repeat;
     background-position: center top 22%;
-    position: absolute;
-    top: 0;
-    left: -1%;
-    width: 102%;
-    height: 100%;
-    filter:blur(10px);
-    z-index: -2;
-    clip-path: inset(0 0 0 0);
-}
-
-.home_title-content {
-    position: relative;
-    color: white;
-    text-align: center;
-    font-size: 2em;
-    font-weight: bold;
-    text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.7);
-    padding: 20px;
-    z-index:-1;
-}
-
-.home_title-content h3 {
-    font-size: 2rem;
-    margin: 10px 0;
-}
-
-.subpage_title-section {
-    height: 70vh;
-    position: relative;
-    overflow: hidden;
-}
-
-.subpage_title-content {
-    position: relative;
-    color: white;
-    text-align: center;
-    font-size: 2em;
-    font-weight: bold;
-    text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.7);
-    z-index: 1;
-    padding: 20px;
-    z-index:-1;
-}
-
-.subpage_title-background {
-    position: absolute;
-    top: 0;
-    left: -1%;
-    width: 102%;
-    height: 100%;
-    filter:blur(6px);
-    z-index: -2;
-    clip-path: inset(0 0 0 0);
+    filter: blur(10px);
 }
 
 .utilitarianism_title-background {
     background: url('img/grpPplTalking.jpg') center/cover no-repeat;
     background-position: center top 58%;
+    filter: blur(6px);
 }
 
 .paternalism_title-background {
     background: url('img/justice.jpg') center/cover no-repeat;
     background-position: center top 10%;
+    filter: blur(6px);
 }
 
 .moralrights_title-background {
     background: url('img/billOfRights.jpg') center/cover no-repeat;
     background-position: center top -30%;
+    filter: blur(6px);
 }
 
+/* Title Content Setup */
+.title-content {
+    position: relative;
+    color: white;
+    text-align: center;
+    font-size: 2em;
+    font-weight: bold;
+    text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    z-index:-1;
+}
+
+.home_title-content {
+}
+
+.home_title-content h3 {
+    font-size: 1.5rem;
+}
+
+.subpage_title-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+
+/* Footer */
 footer {
     left: 0;
     width: 100%;

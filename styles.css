@@ -192,6 +192,56 @@ header a:hover {
     font-size: 1.5rem;
 }
 
+/* Scenario Box */
+.scenario-box {
+    background-color: #f4f4f4;
+    padding: 20px;
+    margin: 30px auto;
+    width: 80%;
+    max-width: 700px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.scanerio-box h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.scanario-text {
+    font-size: 1rem;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.scenario-answer {
+    font-size: 1rem;
+    margin-top: 15px;
+    color: #333;
+    display: none;
+}
+
+.scenario-answer.visible {
+    display: block;
+}
+
+.reveal-btn {
+    padding: 10px 15px;
+    background-color: #4c5d68;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-top: 10px;
+    transition: background .3s ease-in-out;
+}
+
+.reveal-btn:hover {
+    background-color: #3F5160;
+}
+
 
 /* Footer */
 footer {

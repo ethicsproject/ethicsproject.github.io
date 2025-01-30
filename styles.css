@@ -43,7 +43,7 @@ header a:hover {
 }
 
 .subpage_title-section {
-    height: 75vh;
+    height: 50vh;
 }
 
 /* Title Background Setup */
@@ -65,19 +65,19 @@ header a:hover {
 .utilitarianism_title-background {
     background: url('./img/grpPplTalking.jpg') center/cover no-repeat;
     background-position: center top 58%;
-    filter: blur(6px);
+    filter: blur(8px);
 }
 
 .paternalism_title-background {
     background: url('./img/justice.jpg') center/cover no-repeat;
     background-position: center top 10%;
-    filter: blur(6px);
+    filter: blur(8px);
 }
 
 .moralrights_title-background {
     background: url('./img/billOfRights.jpg') center/cover no-repeat;
-    background-position: center top -30%;
-    filter: blur(6px);
+    background-position: center top -10%;
+    filter: blur(8px);
 }
 
 /* Title Content Setup */
@@ -92,9 +92,6 @@ header a:hover {
     z-index:-1;
 }
 
-.home_title-content {
-}
-
 .home_title-content h3 {
     font-size: 1.5rem;
 }
@@ -106,6 +103,93 @@ header a:hover {
     height: 100%;
     width: 100%;
     position: absolute;
+}
+
+/* Home Page Navigation */
+.home-columns {
+    display: flex;
+    justify-content: space-between;
+    margin: 50px auto;
+    max-width: 1200px;
+    text-align: center;
+    gap: 40px;
+}
+
+.home-column {
+    width: 30%;
+    padding: 20px;
+    background: #f4f4f4;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.home-column strong {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 1.2em;
+}
+
+.home-column p {
+    font-size: 1em;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.button-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: white;
+    border-radius: 5px;
+    width: 80%;
+}
+
+.primary-btn {
+    background-color: #4C5D6B;
+    font-size: 1rem;
+}
+
+.primary-btn:hover {
+    background-color: #3F5160;
+}
+
+.secondary-btn {
+    background-color: #6c757d;
+    font-size: .8rem;
+    width: 40%;
+}
+
+.secondary-btn:hover {
+    background-color: #545b62;
+}
+
+/* Deinition Box */
+.definition-box {
+    background-color: #e0e0e0;
+    padding: 20px;
+    margin: 40px auto;
+    width: fit-content;
+    max-width: 85%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.definition-box p {
+    margin: 0;
+    font-size: 1.2rem;
+}
+
+.definition-box strong {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 1.5rem;
 }
 
 

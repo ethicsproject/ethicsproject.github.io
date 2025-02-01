@@ -92,6 +92,16 @@ nav a:hover {
     z-index:-1;
 }
 
+.home_title-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 5% 10px;
+    text-align: center;
+}
+
 .home_title-content h3 {
     font-size: 1.5rem;
 }

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ethics Project - Paternalism Quiz</title>
+        <link rel="stylesheet" href="../styles.css">
+        <script defer src="../quiz.js"></script>
+    </head>
+    <body>
+        <nav>
+            <a href="..">Home</a>
+            <a href="../utilitarianism/">Utilitarianism</a>
+            <a href="../moral-rights/">Moral Rights</a>
+            <a href=".">Paternalism</a>
+        </nav>
+
+        
+        <div class="title-section subpage_title-section">
+            <div class="title-background paternalism_title-background"></div>
+            <div class="title-content subpage_title-content">
+                <h1>Paternalism Quiz</h1>
+            </div>
+        </div>
+
+        <div class="quiz-container">
+            <p id="question-number">Question 1</p>
+            <p id="question-text"></p>
+
+            <div id="quiz-options" class="quiz-options"></div>
+
+            <p id="quiz-feedback" class="hidden"></p>
+
+            <div class="quiz-buttons">
+                <button id="prev-btn" onclick="prevQuestion()">Previous</button>
+                <button id="submit-btn" onclick="submitAnswer()">Submit</button>
+                <button id="next-btn" onclick="nextQuestion()">Next</button>
+            </div>
+
+            <p id="quiz-score">Score: 0</p>
+        </div>
+
+        <a href="." class="back-button">Back to Topic Page</a>
+
+        <footer>
+            <p>AP Language & Composition – Period 5</p>
+            <p>Mr. Mickelson | Tesla STEM High School</p>
+            <p>&copy; 2024 Ethics Project</p>
+        </footer>
+
+    </body>
+</html>

@@ -170,6 +170,25 @@ nav a:hover {
     background-color: #545b62;
 }
 
+.home-column img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-top: 8px;
+    border: 3px solid #5a7d8a;
+    padding: 2px;
+}
+
+.home-column .author-name {
+    font-size: 0.9rem;
+    font-style: italic;
+    color: #555;
+    margin-top: 5px;
+    margin-bottom: 8px;
+    text-align: center;
+}
+
 /* Deinition Box */
 .definition-box {
     background-color: #e0e0e0;
@@ -368,7 +387,7 @@ nav a:hover {
 
 #submit-btn {
     padding: 10px 20px;
-    background-color: #4C5D6B; /* Muted grayish blue */
+    background-color: #4C5D6B;
     color: white;
     border: none;
     border-radius: 5px;

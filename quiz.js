@@ -1,19 +1,55 @@
 // Store Quiz Questions
 const quizData = {
     "utilitarianism": [
-        { question: "What is the key principle of utilitarianism?", options: ["Maximizing personal benefit", "Following moral duties", "Maximizing overall happiness", "Acting based on emotions"], correct: 2 },
-        { question: "Who is a major philosopher behind utilitarianism?", options: ["Immanuel Kant", "John Stuart Mill", "Aristotle", "Karl Marx"], correct: 1 },
-        { question: "What is the 'greatest happiness principle'?", options: ["Do whatever makes you happiest", "The action that produces the most happiness is best", "Happiness is subjective", "Moral duties matter more than happiness"], correct: 1 }
+        { // Question 1
+            question: "Who was a key philosopher behind utilitarianism?",
+            options: ["Immanuel Kant", "John Stuart Mill", "Ruth Benedict", "Karl Marx"],
+            correct: 1
+        },
+        { // Question 2
+            question: "Who can determine whether pleasures are of higher or lower nature?",
+            options: ["Those who experienced both kinds of pleasure", "Those who have more money", "Those who are older", "An expert on the Soviet Onion"],
+            correct: 0
+        },
+        { // Question 3
+            question: "Fill in the blank: “Better _____ than a fool satisfied”",
+            options: ["American", "Dead", "Socrates Dissatisfied", "Broke and Lost"],
+            correct: 2
+        }
     ],
     "paternalism": [
-        { question: "What is paternalism in ethics?", options: ["Giving people total freedom", "Interfering with a person’s freedom for their own good", "Forcing moral decisions", "A democratic system"], correct: 1 },
-        { question: "Which is an example of paternalism?", options: ["Banning smoking in public places", "Letting everyone make their own choices", "Following cultural traditions", "Making all laws optional"], correct: 0 },
-        { question: "Which philosopher is often associated with paternalism?", options: ["John Locke", "John Stuart Mill", "Thomas Hobbes", "Karl Popper"], correct: 2 }
+        { // Question 1
+            question: "Which right does paternalism argue is sometimes less important than other concerns?",
+            options: ["Freedom", "Property", "The right to wear socks with sandals", "Life"],
+            correct: 0
+        },
+        { // Question 2
+            question: "Where is paternalism commonly applied?",
+            options: ["At Mile Market 45", "Friendship", "Petting a dog", "Government policies"],
+            correct: 3
+        },
+        { // Question 3
+            question: "Which philosopher is often associated with paternalism?",
+            options: ["John Locke", "John Stuart Mill", "Thomas Hobbes", "A talking toaster giving life advice"],
+            correct: 2
+        }
     ],
     "moral-rights": [
-        { question: "What is moral rights in ethics?", options: ["Giving people total freedom", "Interfering with a person’s freedom for their own good", "Forcing moral decisions", "A democratic system"], correct: 1 },
-        { question: "Which is an example of moral rights?", options: ["Banning smoking in public places", "Letting everyone make their own choices", "Following cultural traditions", "Making all laws optional"], correct: 0 },
-        { question: "Which philosopher is often associated with moral rights?", options: ["John Locke", "John Stuart Mill", "Thomas Hobbes", "Karl Popper"], correct: 2 }
+        { // Question 1
+            question: "What are the two main types of moral rights?",
+            options: ["Positive and negative", "Left and right", "Given and taken", "The right to unlimited pizza and the right to complain about it"],
+            correct: 0
+        },
+        { // Question 2
+            question: "Which of these is least likely to be considered a moral right?",
+            options: ["Right to life", "Right to free speech", "Right to truth", "The right to legally declare yourself correct in every debate"],
+            correct: 3
+        },
+        { // Question 3
+            question: "Which philosopher is most closely linked to moral rights?",
+            options: ["Kant", "Descartes", "Marx", "An overconfident philosophy major at a party"],
+            correct: 0
+        }
     ]
 };
 

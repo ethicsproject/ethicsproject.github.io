@@ -224,7 +224,7 @@ nav a:hover {
 }
 
 .scenario-video {
-    width: 100%;
+    width: 40%;
     height: auto;
     display: block;
     margin: 15px auto;
@@ -444,6 +444,52 @@ nav a:hover {
 
 .back-button:hover {
     background-color: #545b62;
+}
+
+    /* Quiz Scenario */
+.quiz-scenario-container {
+    background-color: #f9f9f9;
+    padding: 20px;
+    margin: 30px auto;
+    width: 85%;
+    max-width: 750px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.quiz-scenario-video {
+    width: 45%;
+    height: auto;
+    display: block;
+    margin: 15px auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.quiz-scenario-title {
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.quiz-scenario-text {
+    font-size: 1rem;
+    margin-bottom: 15px;
+    color: #333;
+    padding: 5px 10px;
+}
+
+.quiz-scenario-instructions {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-top: 10px;
+    color: #444;
+    text-align: center;
+    padding: 8px 12px;
+    background-color: #eef1f4;
+    border-radius: 5px;
+    display: inline-block;
 }
 
 /* Footer */

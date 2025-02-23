@@ -15,6 +15,15 @@ const quizData = {
             question: "Fill in the blank: “Better _____ than a fool satisfied”",
             options: ["American", "Dead", "Socrates Dissatisfied", "Broke and Lost"],
             correct: 2
+        },
+        { // Question 4
+            question: "Scenario: The Stranded Hikers and the Last Bottle of Water",
+            isScenario: true,
+            video: "videos/trolley.mp4",
+            scenarioText: ["Mahika, a seasoned hiking guide, leads a group of two people on a remote mountain trail when disaster strikes. A sudden rockslide destroys their path back, leaving them stranded miles from help with no cell service. They have limited supplies—just a few protein bars and a single bottle of water. Rescuers might arrive in a few hours, or it could take days.", "Among the hikers is Pratul, a young woman who is severely dehydrated and struggling to stay conscious. There’s also Arjun, a 70-year-old retired teacher who has been mentoring kids for decades. The others—two young men and a mother of three—are thirsty but still functioning. Jake knows that if he gives the water to Pratul, it might be enough to sustain her until help arrives, but that means denying it to the rest of the group. If he rations it among all five, it might not be enough to save anyone."],
+            instructions: "Choose whether to push the man or let the trolley continue.",
+            options: ["Push the man", "Do nothing"],
+            correct: 1
         }
     ],
     "paternalism": [
@@ -79,38 +88,31 @@ function loadQuestion() {
     questionText.textContent = q.question;
     questionNumber.textContent = `Question ${currentQuestion + 1}`;
 
-    // Populate options
     quizOptions.innerHTML = "";
+
+    if (q.isScenario) {
+        quizOptions.innerHTML = `
+            <div class="quiz-scenario-container">
+                <h3 class="quiz-scenario-title">${q.question}</h3>
+                <video class="quiz-scenario-video" controls>
+                    <source src="${q.video}" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <p class="quiz-scenario-text">${q.scenarioText.join("<br><br>")}</p>
+                <p class="quiz-scenario-instructions">${q.instructions}</p>
+            </div>
+        `;
+    }
+
     q.options.forEach((option, index) => {
         const label = document.createElement("label");
         label.innerHTML = `<input type="radio" name="quiz" value="${index}"> ${option}`;
         quizOptions.appendChild(label);
     });
-
-    // Restore previous answer if selected
-    if (userAnswers[currentQuestion] !== null) {
-        let selectedInput = document.querySelector(`input[name="quiz"][value="${userAnswers[currentQuestion]}"]`);
-        selectedInput.checked = true;
-        submitBtn.disabled = true; // Prevent resubmitting
-        document.querySelectorAll('input[name="quiz"]').forEach(input => input.disabled = true);
-    } else {
-        submitBtn.disabled = false;
-    }
-
-    // Restore previous feedback message if available
-    if (feedbackMessages[currentQuestion]) {
-        quizFeedback.textContent = feedbackMessages[currentQuestion];
-        quizFeedback.style.color = feedbackMessages[currentQuestion].includes("✅") ? "green" : "red";
-        quizFeedback.classList.remove("hidden");
-    } else {
-        quizFeedback.textContent = "";
-        quizFeedback.classList.add("hidden");
-    }
-
-    // Hide/Show navigation buttons
-    nextBtn.style.display = currentQuestion === questions.length - 1 ? "none" : "inline-block";
-    prevBtn.style.display = currentQuestion === 0 ? "none" : "inline-block";
 }
+
+
+
 
 // Submit Answer
 function submitAnswer() {

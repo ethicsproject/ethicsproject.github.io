@@ -424,6 +424,7 @@ nav a:hover {
     margin-bottom: 8px;
     transition: background 0.3s ease-in-out, border 0.2s;
     border: 2px solid transparent;
+    width: auto; /* Prevent squishing */
 }
 
 .quiz-options label:hover {
@@ -439,9 +440,9 @@ nav a:hover {
     outline: none;
     cursor: pointer;
     display: inline-block;
-    position: relative;
     background-color: white;
     transition: all 0.3s ease-in-out;
+    flex-shrink: 0; /* Prevents shrinking */
 }
 
 .quiz-options input[type="radio"]:checked {
@@ -582,6 +583,19 @@ nav a:hover {
     border-radius: 5px;
     display: inline-block;
 }
+
+.quiz-scenario-container .quiz-options {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 10px;
+}
+
+.quiz-scenario-container .quiz-options label {
+    width: 100%;
+    display: flex;
+    align-items: center;
 
 /* Footer */
 footer {

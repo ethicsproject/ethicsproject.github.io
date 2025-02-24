@@ -127,8 +127,34 @@ function loadQuestion() {
         label.innerHTML = `<input type="radio" name="quiz" value="${index}"> ${option}`;
         quizOptions.appendChild(label);
     });
-}
 
+    // Re-enable the submit button for the new question
+    submitBtn.disabled = false;
+    
+    // Re-enable radio buttons when loading a new question
+    document.querySelectorAll('input[name="quiz"]').forEach(input => input.disabled = false);
+
+    if (userAnswers[currentQuestion] !== null) {
+        let selectedInput = document.querySelector(`input[name="quiz"][value="${userAnswers[currentQuestion]}"]`);
+        selectedInput.checked = true;
+        submitBtn.disabled = true; // Prevents re-submitting a previously answered question
+        document.querySelectorAll('input[name="quiz"]').forEach(input => input.disabled = true);
+    } else {
+        submitBtn.disabled = false;
+    }
+
+    if (feedbackMessages[currentQuestion]) {
+        quizFeedback.textContent = feedbackMessages[currentQuestion];
+        quizFeedback.style.color = feedbackMessages[currentQuestion].includes("✅") ? "green" : "red";
+        quizFeedback.classList.remove("hidden");
+    } else {
+        quizFeedback.textContent = "";
+        quizFeedback.classList.add("hidden");
+    }
+
+    nextBtn.style.display = currentQuestion === questions.length - 1 ? "none" : "inline-block";
+    prevBtn.style.display = currentQuestion === 0 ? "none" : "inline-block";
+}
 
 
 

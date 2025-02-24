@@ -105,6 +105,29 @@ nav a:hover {
     position: absolute;
 }
 
+/* Home Intro Section */
+
+.home-intro {
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin: 30px auto 15px;
+    max-width: 900px;
+    padding: 0 20px;
+    line-height: 1.5;
+}
+
+/* Home Page Paragraph */
+.home-description {
+    text-align: center;
+    font-size: 1.1rem;
+    color: #333;
+    max-width: 800px;
+    margin: 0 auto 30px;
+    padding: 0 20px;
+    line-height: 1.6;
+}
+
 /* Home Page Navigation */
 .home-columns {
     display: flex;
@@ -187,6 +210,74 @@ nav a:hover {
     margin-top: 5px;
     margin-bottom: 8px;
     text-align: center;
+}
+
+/* Real-Life Scenario Section */
+.real-life-section {
+    background-color: #f4f4f4;
+    padding: 25px;
+    margin: 50px auto;
+    max-width: 900px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+/* Title */
+.real-life-title {
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+/* Description */
+.real-life-description {
+    font-size: 1.1rem;
+    color: #333;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+/* Resources & Links */
+.real-life-resources-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.real-life-resources {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+.real-life-resources li {
+    font-size: 1rem;
+    margin-bottom: 8px;
+}
+
+.real-life-resources a {
+    text-decoration: none;
+    color: #4C5D6B;
+    font-weight: bold;
+}
+
+.real-life-resources a:hover {
+    text-decoration: underline;
+    color: #3F5160;
+}
+
+/* Instructions */
+.real-life-instructions-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.real-life-instructions {
+    font-size: 1.1rem;
+    color: #333;
+    line-height: 1.6;
 }
 
 /* Deinition Box */

@@ -19,11 +19,11 @@ const quizData = {
         { // Question 4
             question: "Scenario: The Stranded Hikers and the Last Bottle of Water",
             isScenario: true,
-            video: "videos/trolley.mp4",
-            scenarioText: ["Mahika, a seasoned hiking guide, leads a group of two people on a remote mountain trail when disaster strikes. A sudden rockslide destroys their path back, leaving them stranded miles from help with no cell service. They have limited supplies—just a few protein bars and a single bottle of water. Rescuers might arrive in a few hours, or it could take days.", "Among the hikers is Pratul, a young woman who is severely dehydrated and struggling to stay conscious. There’s also Arjun, a 70-year-old retired teacher who has been mentoring kids for decades. The others—two young men and a mother of three—are thirsty but still functioning. Jake knows that if he gives the water to Pratul, it might be enough to sustain her until help arrives, but that means denying it to the rest of the group. If he rations it among all five, it might not be enough to save anyone."],
-            instructions: "Choose whether to push the man or let the trolley continue.",
-            options: ["Push the man", "Do nothing"],
-            correct: 1
+            video: "../videos/hikingScenario.mp4",
+            scenarioText: ["Mahika, a seasoned hiking guide, leads a group of two people on a remote mountain trail when disaster strikes. A sudden rockslide blocks their path back, leaving them stranded miles from help with no cell service. They have limited supplies—just a few protein bars and a single bottle of water. Rescuers might arrive in a few hours, or it could take days.", "Among the hikers is Pratty, a young woman who is severely hurt and struggling to stay conscious. There’s also Arjun, a 70-year-old retired teacher who has been mentoring kids for decades and really needs water. Mahika knows that if she gives the water to Pratty, it might be enough to sustain her until help arrives, but that means denying it to the rest of the group which could lead to the old man dying and if she was to give it to the old man the young woman would die. If he rations it among all, it might not be enough to save anyone."],
+            instructions: "Choose the best action under the idea of utilitarianism.",
+            options: ["Giving all the water to Pratty would likely be the utilitarian choice—it prevents total loss and ensures at least one person benefits fully, rather than everyone suffering and likely perishing.", "Mahika should make the decision herself if she believes it will save more lives, even if it overrides the group’s choice. If maximizing survival is the priority, paternalism is justified. However, if fairness and autonomy matter more, she should let them vote, even if it leads to a worse outcome.", "All members have an equal right to the water, but if Pratty is the weakest, she might have a stronger moral claim. Mahika doesn’t have absolute moral authority to decide who lives or dies, but as a leader, she may have to make the tough choice for the group’s survival.", "Mahika could lead the group in a highly improvised \"Emergency Rain Ritual\" combining synchronized stomping, hopeful sky-gazing, and dramatic chants of \"Water, water, everywhere—except right here!\" If the ritual succeeds, problem solved. If not, at least they burned some calories."],
+            correct: 0
         }
     ],
     "paternalism": [
@@ -41,6 +41,15 @@ const quizData = {
             question: "Which philosopher is often associated with paternalism?",
             options: ["John Locke", "John Stuart Mill", "Thomas Hobbes", "A talking toaster giving life advice"],
             correct: 2
+        },
+        { // Question 4
+            question: "Scenario: The Stranded Hikers and the Last Bottle of Water",
+            isScenario: true,
+            video: "../videos/hikingScenario.mp4",
+            scenarioText: ["Mahika, a seasoned hiking guide, leads a group of two people on a remote mountain trail when disaster strikes. A sudden rockslide blocks their path back, leaving them stranded miles from help with no cell service. They have limited supplies—just a few protein bars and a single bottle of water. Rescuers might arrive in a few hours, or it could take days.", "Among the hikers is Pratty, a young woman who is severely hurt and struggling to stay conscious. There’s also Arjun, a 70-year-old retired teacher who has been mentoring kids for decades and really needs water. Mahika knows that if she gives the water to Pratty, it might be enough to sustain her until help arrives, but that means denying it to the rest of the group which could lead to the old man dying and if she was to give it to the old man the young woman would die. If he rations it among all, it might not be enough to save anyone."],
+            instructions: "Choose the best action under the idea of utilitarianism.",
+            options: ["Giving all the water to Pratty would likely be the utilitarian choice—it prevents total loss and ensures at least one person benefits fully, rather than everyone suffering and likely perishing.", "Mahika should make the decision herself if she believes it will save more lives, even if it overrides the group’s choice. If maximizing survival is the priority, paternalism is justified. However, if fairness and autonomy matter more, she should let them vote, even if it leads to a worse outcome.", "All members have an equal right to the water, but if Pratty is the weakest, she might have a stronger moral claim. Mahika doesn’t have absolute moral authority to decide who lives or dies, but as a leader, she may have to make the tough choice for the group’s survival.", "Mahika could lead the group in a highly improvised \"Emergency Rain Ritual\" combining synchronized stomping, hopeful sky-gazing, and dramatic chants of \"Water, water, everywhere—except right here!\" If the ritual succeeds, problem solved. If not, at least they burned some calories."],
+            correct: 1
         }
     ],
     "moral-rights": [
@@ -58,6 +67,15 @@ const quizData = {
             question: "Which philosopher is most closely linked to moral rights?",
             options: ["Kant", "Descartes", "Marx", "An overconfident philosophy major at a party"],
             correct: 0
+        },
+        { // Question 4
+            question: "Scenario: The Stranded Hikers and the Last Bottle of Water",
+            isScenario: true,
+            video: "../videos/hikingScenario.mp4",
+            scenarioText: ["Mahika, a seasoned hiking guide, leads a group of two people on a remote mountain trail when disaster strikes. A sudden rockslide blocks their path back, leaving them stranded miles from help with no cell service. They have limited supplies—just a few protein bars and a single bottle of water. Rescuers might arrive in a few hours, or it could take days.", "Among the hikers is Pratty, a young woman who is severely hurt and struggling to stay conscious. There’s also Arjun, a 70-year-old retired teacher who has been mentoring kids for decades and really needs water. Mahika knows that if she gives the water to Pratty, it might be enough to sustain her until help arrives, but that means denying it to the rest of the group which could lead to the old man dying and if she was to give it to the old man the young woman would die. If he rations it among all, it might not be enough to save anyone."],
+            instructions: "Choose the best action under the idea of utilitarianism.",
+            options: ["Giving all the water to Pratty would likely be the utilitarian choice—it prevents total loss and ensures at least one person benefits fully, rather than everyone suffering and likely perishing.", "Mahika should make the decision herself if she believes it will save more lives, even if it overrides the group’s choice. If maximizing survival is the priority, paternalism is justified. However, if fairness and autonomy matter more, she should let them vote, even if it leads to a worse outcome.", "All members have an equal right to the water, but if Pratty is the weakest, she might have a stronger moral claim. Mahika doesn’t have absolute moral authority to decide who lives or dies, but as a leader, she may have to make the tough choice for the group’s survival.", "Mahika could lead the group in a highly improvised \"Emergency Rain Ritual\" combining synchronized stomping, hopeful sky-gazing, and dramatic chants of \"Water, water, everywhere—except right here!\" If the ritual succeeds, problem solved. If not, at least they burned some calories."],
+            correct: 2
         }
     ]
 };
